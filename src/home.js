@@ -24,6 +24,7 @@ function displayHome() {
 
     const menu = document.createElement('div');
     menu.classList.add('tab');
+    menu.setAttribute('id', 'menu');
     menu.innerHTML = 'Menu';
 
     const contact = document.createElement('div');
