@@ -1,0 +1,61 @@
+function displayContact() {
+    const header = document.createElement('div');
+    header.classList.add('header');
+
+    const content = document.createElement('div');
+    content.classList.add('content');
+
+    const footer = document.createElement('div');
+    footer.classList.add('footer');
+
+    const headerInfo = document.createElement('div');
+    headerInfo.classList.add('headerInfo');
+
+    const name = document.createElement('div');
+    name.classList.add('name')
+    name.innerHTML = "Yum-Yum Exotic Foods"
+
+    const tabcont = document.createElement('div');
+    tabcont.classList.add('tabcont');
+
+    const home = document.createElement('div');
+    home.classList.add('tab');
+    home.setAttribute('id', 'home');
+    home.innerHTML = 'Home';
+
+    const menu = document.createElement('div');
+    menu.classList.add('tab');
+    menu.setAttribute('id', 'menu');
+    menu.innerHTML = 'Menu';
+
+    const contact = document.createElement('div');
+    contact.classList.add('tab');
+    contact.setAttribute('id', 'contact');
+    contact.innerHTML = 'Contact Us';
+
+    const phone = document.createElement('div');
+    phone.innerHTML = 'Phone: 622-YUM-YUM1';
+    phone.classList.add('phone');
+
+    const address = document.createElement('div');
+    address.innerHTML = 'Address: 321 Tastebud Drive, Chicago, IL';
+    address.classList.add('address');
+
+    content.appendChild(phone);
+    content.appendChild(address);
+
+
+    tabcont.appendChild(home);
+    tabcont.appendChild(menu);
+    tabcont.appendChild(contact);
+
+    headerInfo.appendChild(name);
+    headerInfo.appendChild(tabcont);
+    header.appendChild(headerInfo);
+
+    document.body.appendChild(header);
+    document.body.appendChild(content);
+    document.body.appendChild(footer);
+}
+
+export default displayContact;

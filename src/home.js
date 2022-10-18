@@ -20,6 +20,7 @@ function displayHome() {
 
     const home = document.createElement('div');
     home.classList.add('tab');
+    home.setAttribute('id', 'home');
     home.innerHTML = 'Home';
 
     const menu = document.createElement('div');
@@ -29,6 +30,7 @@ function displayHome() {
 
     const contact = document.createElement('div');
     contact.classList.add('tab');
+    contact.setAttribute('id', 'contact');
     contact.innerHTML = 'Contact Us';
 
     const description = document.createElement('p');

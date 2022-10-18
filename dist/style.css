@@ -110,3 +110,14 @@ body, html {
     margin: .5em;
 }
 
+.address, .phone {
+    font-family: 'Courgette', cursive;
+    font-size: 2em;
+    color: white;
+    margin: 1em;
+}
+
+.phone {
+    margin-top: 4em;
+}
+
